@@ -10,6 +10,7 @@ nav {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+  padding: 13px;
   background-color: #4c1318;
 }
 
@@ -33,6 +34,15 @@ main {
   background-color: #cbc9ad;
 }
 
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+td {
+  padding: 20px;
+}
+
 .search-area {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -43,16 +53,35 @@ main {
   grid-row-end: 3;
 }
 
+.circle-graph {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 7px solid;
+}
+
+.circle-graph-one {
+  border-color: #320709 gray #320709 #320709;
+}
+
 #user-photo {
   height: 80px;
   width: 80px;
   border-radius: 100%;
 }
 
-.circle-graph {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  border: 4px solid;
+.user-main a,
+.allies a,
+.user-categories input {
+  display: block;
 }
+
+.nav-icon {
+  height: 25px;
+}
+
+
+
+
+
