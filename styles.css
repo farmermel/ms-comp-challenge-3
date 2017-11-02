@@ -10,8 +10,8 @@ nav {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  padding: 13px;
   background-color: #4c1318;
+  color: #d8d3bc;
 }
 
 header {
@@ -129,6 +129,11 @@ td {
   border-color: #320709 gray #320709 #320709;
 }
 
+.user{
+  padding: 36px 0 5px 36px;
+  border-bottom: .5px solid;
+}
+
 #user-photo {
   height: 80px;
   width: 80px;
@@ -139,6 +144,21 @@ td {
 .allies a,
 .user-categories input {
   display: block;
+}
+
+.user-main {
+  padding: 30px 0 30px 14px;
+  border-bottom: .5px solid;
+}
+
+.allies {
+  padding: 30px 0 30px 14px;
+  border-bottom: .5px solid;
+}
+
+.user-categories {
+  padding: 30px 0 30px 14px;
+  border-bottom: .5px solid;
 }
 
 .nav-icon {
