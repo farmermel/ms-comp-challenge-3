@@ -3,6 +3,8 @@
   <head>
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Manuale:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tyrion Lannister</title>
   </head>
@@ -20,17 +22,13 @@
       </section>
       <section class="page-title">
         <h1>Hand to the Queen</h1>
-        <p>Dragonstone, Westeros <a href=#>See My Credentials</a></p>
-        <div class="edit-page-buttons">
+        <p>Dragonstone, Westeros <a class="credential-link" href=#>See My Credentials</a></p>
+        <form class="edit-page-buttons">
           <button></button>
           <button></button>
           <button></button>
           <button></button>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section class="stats">
+        </form>
         <ul class="stat-tabs">
           <li>Overview</li>
           <li>Musings</li>
@@ -40,20 +38,25 @@
           <li>Battles</li>
           <li>Wives</li>
         </ul>
+      </section>
+    </header>
+    <main>
+      <section class="stats">
+
         <article class="current-stats">
           <div class="circle-graph circle-graph-one">30,000 gold dragons</div>
-          <div class="circle-graph circle-graph-two">filler</div>
-          <div class="circle-graph circle-graph-three">filler</div>
+          <div class="circle-graph circle-graph-two">02 Kings Served</div>
+          <div class="circle-graph circle-graph-three">02 Queens Served</div>
         </article>
       </section>
       <section class="description-section">
         <!-- <article class="bottom-main-wrapper"> -->
           <article class="page-description">
-            <p>Job Description</p>
               <table>
-                <tr></tr>
+                <tr class="table-description">
                   <th>Job Description</th>
-                  <th><button>Edit</button></th>
+                  <th><button class="edit-description">Edit</button></th>
+                </tr>
                 <tr>
                   <th>Job</th>
                   <td>yepyep</td>
@@ -89,9 +92,11 @@
               </table>
           </article>
           <aside class="social-media">
-            <button>Send a Raven</button>
-            <button>Print a Wanted Poster</button>
-            <button>Request a Lordship</button>
+            <form>
+              <button class="media-button send-raven"><img src="images/flying-raven.png">Send a Raven</button>
+              <button class="media-button wanted-poster">Print a Wanted Poster</button>
+              <button class="media-button request-lordship">Request a Lordship</button>
+            </form>
             <h3>Find this User</h3>
             <p>Nonsense nonsense nonsense nonsense nonsense nonsense nonsense</p>
           </aside>
@@ -119,17 +124,17 @@
         <a><img src="images/stark.png" class="nav-icon" alt="Wolf icon">Jon Snow</a>
         <a>Mountain Clans</a>
       </section>
-      <section class="user-categories">
-        <h5>Categories</h5>
+      <section class="user-enemies">
+        <h5>Enemy Elimination Tracker</h5>
         <form>
           <input type="checkbox" id="">
-          <label for="">Administrative</label>
+          <label for="">Tywin</label>
           <input type="checkbox" id="">
           <label for="">Design</label>
           <input type="checkbox" id="">
           <label for="">Executive</label>
           <input type="checkbox" id="">
-          <label for="">Human Resources</label>
+          <label for="">Cersei</label>
         </form>
       </section>
     </nav>
