@@ -3,6 +3,7 @@ body {
   grid-template-columns: 15% 85%;
   grid-template-rows: 18% 82%;
   font-family: "Manuale", serif;
+  line-height: 1.45;
 }
 
 nav {
@@ -18,14 +19,14 @@ nav {
 header {
   position: relative;
   display: grid;
-  grid-template-rows: auto;
+  /*grid-template-rows: auto;*/
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: #7d7e75;
   background-image: url(images/misty-trees.jpg);
   background-size: cover;
   background-position: 0px -40px;
-  text-shadow: 0 0 5px #fff;
+  text-shadow: 0 0 14px #fff;
   color: black;
   /*background-color: #ceaf69;*/
 }
@@ -53,6 +54,7 @@ li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px 0px 15px;
+  font-weight: 600;
 }
 
 table {
@@ -70,7 +72,14 @@ td {
   padding: 20px;
 }
 
+nav a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .search-area {
+  display: flex;
   grid-row-start: 1;
   grid-row-end: 2;
   border-bottom: solid 1.5px #264653;
@@ -104,9 +113,13 @@ td {
 .nav-search {
   border-style: none;
   border-right: 1.5px solid #264653;
-  height: 60px;
-  width: 70%;
+  /*height: 60px;*/
+  width: 100%;
   background-color: transparent;
+}
+
+.nav-search::placeholder {
+  color: #517583;
 }
 
 .home-nav-icon {
@@ -157,6 +170,7 @@ td {
 .stat-tabs {
   border-bottom: .5px solid;
   margin-bottom: 0;
+  font-family: "Isotok-Web", sans-serif;
 }
 
 .active-tab {
@@ -169,16 +183,17 @@ td {
 }
 
 .circle-graph {
-  display: inline-block;
+  display: inline-flex;
   height: 100px;
   width: 100px;
   border-radius: 100%;
   border: 7px solid;
+  align-items: center;
   text-align: center;
 }
 
 .circle-graph-one {
-  border-color: #3A3B7A;
+  border-color: #3a3b7a;
 }
 
 .circle-graph-two {
@@ -230,22 +245,29 @@ td {
 }
 
 .user{
-  padding: 36px 0 5px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*padding: 36px 0 5px 36px;*/
   border-bottom: .5px solid;
 }
 
 #user-photo {
-  margin: auto;
+  margin: 27px auto 0px;
   height: 80px;
   width: 80px;
   border-radius: 100%;
 }
 
-.user-main a,
+.user p {
+  margin: 10px;
+}
+
+/*.user-main a,
 .allies a,
 .user-enemies input {
   display: block;
-}
+}*/
 
 .user-main {
   padding: 30px 0 30px 14px;
