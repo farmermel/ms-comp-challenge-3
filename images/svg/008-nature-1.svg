@@ -2,6 +2,11 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 <style type="text/css">
+	 	path {
+	 		fill: #fff;
+	 	}
+	</style>
 <g>
 	<g>
 		<path d="M510.358,377.064L441.19,275.758h25.657c3.497,0,6.708-1.935,8.341-5.028c1.633-3.093,1.422-6.835-0.55-9.724

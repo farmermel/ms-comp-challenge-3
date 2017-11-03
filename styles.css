@@ -162,6 +162,7 @@ nav a {
 
 .site-link {
   color: #ef818e;
+  text-decoration: underline;
   font-weight: 600;
 }
 
@@ -174,22 +175,30 @@ nav a {
 }
 
 .active-tab {
-  border-bottom: solid 3px #ef818e;
+  border-bottom: solid 4px #ef818e;
 }
 
 .current-stats {
+  display: flex;
+  justify-content: space-between;
   padding: 0 0 35px 0;
   border-bottom: 1px solid #264653;
+  width: 42%;
 }
 
 .circle-graph {
   display: inline-flex;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   border-radius: 100%;
-  border: 7px solid;
-  align-items: center;
+  border: 12px solid;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+}
+
+.circle-graph p {
+  margin: 0px;
 }
 
 .circle-graph-one {
