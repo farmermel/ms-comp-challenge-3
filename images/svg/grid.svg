@@ -4,6 +4,11 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="965.199px" height="965.199px" viewBox="0 0 965.199 965.199" style="enable-background:new 0 0 965.199 965.199;"
 	 xml:space="preserve">
+<style>
+	path {
+		fill: #0d2128;
+	}
+</style>
 <g>
 	<path d="M263.85,30c0-16.6-13.4-30-30-30h-202c-16.6,0-30,13.4-30,30v202.1c0,16.6,13.4,30,30,30h202.1c16.6,0,30-13.4,30-30V30
 		H263.85z"/>

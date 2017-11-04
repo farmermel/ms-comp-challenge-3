@@ -12,7 +12,7 @@
     <header>
       <section class="search-area">
         <div class="nav-toggle-container">
-          <img src="images/svg/left-arrow.svg" class="search-icon small-search-icon">
+          <img src="images/svg/left-arrow.svg" class="search-icon small-icon">
           <img src="images/svg/bars.svg" id="nav-hamburger" class="search-icon" alt="hamburger menu">
         </div>
         <input class="nav-search" placeholder="Căutare în Site">
@@ -25,9 +25,9 @@
         <p>Carpații românești<a class="site-link" href=#>Vizită Aceasta Site</a></p>
         <form class="edit-page-btn-wrap">
           <button id="long-edit-btn" class="edit-page-btn"><div><div class="active-light"></div>Deschis</div></button>
-          <button class="edit-page-btn"></button>
-          <button class="edit-page-btn"></button>
-          <button class="edit-page-btn"></button>
+          <button class="edit-page-btn"><img src="images/svg/tag.svg" class="edit-icon" alt="Tag icon"></button>
+          <button class="edit-page-btn"><img src="images/svg/edit.svg" class="edit-icon" alt="Edit icon"></button>
+          <button class="edit-page-btn"><img src="images/svg/like.svg" class="edit-icon" alt="Heart icon"></button>
         </form>
         <ul class="stat-tabs">
           <li class="active-tab">Sumar</li>
@@ -42,19 +42,24 @@
     </header>
     <main>
       <section class="stats">
-
         <article class="current-stats">
           <div class="circle-graph circle-graph-one"><p>303,000</p><p>Vizită</p></div>
           <div class="circle-graph circle-graph-two"><p>250,000</p><p>Hectare Pădure</p></div>
           <div class="circle-graph circle-graph-three"><p>02</p><p>Queens Served</p></div>
         </article>
+        <article class="bar-graph">
+          <!-- <img src="images/bar-graph-small.png" class="bar-graph" alt="Bar graph"> -->
+        </article>
+        <div class="create-space">
+          <div id="up-arrow-container"><img src="images/svg/up-arrow.svg" class="up-arrow-img" alt="up arrow"></div>
+        </div>
       </section>
       <section class="description-section">
           <article class="page-description">
               <table>
                 <tr class="table-description">
                   <th>Descriere Parcul</th>
-                  <th><button class="edit-description">A Rezivui</button></th>
+                  <th><button class="edit-description"><img src="images/svg/edit.svg" class="media-img" alt="edit icon">A Rezivui</button></th>
                 </tr>
                 <tr>
                   <th>Nume de Parc</th>
@@ -92,11 +97,11 @@
               <button class="media-button twitter"><img src="images/svg/twitter.svg" class="media-img"><p>A Posta la Twitter</p></button>
               <button class="media-button instagram"><img src="images/svg/instagram.svg" class="media-img"><p>A Posta la Insta</p></button>
             </form>
-            <h3>Link</h3>
+            <h3><img src="images/svg/link-symbol.svg" class="edit-icon" alt="Chain-link icon">Link</h3>
             <p>Element de navigație într-un document electronic către alte părți ale aceluiași document.</p>
-            <h3>A Descărcarea Date</h3>
+            <h3><img src="images/svg/cloud.svg" class="edit-icon" alt="Cloud upload icon">A Descărcarea Date</h3>
             <p>A descărca înseamnă a primi date și fișiere de la un sistem depărtat pe sistemul local.</p>
-            <h3>A Trimite la Prieten</h3>
+            <h3><img src="images/svg/send.svg" class="edit-icon" alt="Paper plane icon">A Trimite la Prieten</h3>
             <p>Prietenia este o relație afectivă și de cooperare între ființe umane, care se caracterizează prin sentiment de simpatie.</p>
           </aside>
       </section>
@@ -104,18 +109,18 @@
     <nav>
       <section class="user">
         <img src="images/bear.jpg" id="user-photo" alt="Drawing of a bear drinking tea">
-        <p>Vizitator</p>
+        <p>Vizitator <img src="images/svg/arrow-down.svg" class="small-icon" alt="Down arrow icon"></p>
       </section>
       <section class="user-main">
-        <h5>Cuprins</h5>
+        <h5 class="user-headings">Cuprins</h5>
         <a><img src="images/svg/landscape.svg" class="nav-icon" alt="Tent and moon icon">Acasă</a>
         <a><img src="images/svg/forest-scene.svg" class="nav-icon" alt="Forest scene icon">Pământ</a>
         <a><img src="images/svg/tree-stump.svg" class="nav-icon" alt="Tree Stump Icon">Conservare</a>
         <a><img src="images/svg/budding-leaves.svg" class="nav-icon" alt="Plant icon">Ecologie</a>
         <a><img src="images/svg/raven.svg" class="nav-icon" alt="raven-icon">A Studia Păsările </a>
       </section>
-      <section class="allies">
-          <h5>Logistici</h5>
+      <section class="logistics">
+          <h5 class="user-headings">Logistici</h5>
         <a><img src="images/svg/bear.svg" class="nav-icon" alt="Bear icon">Urși</a>
         <a><img src="images/svg/tent.svg" class="nav-icon" alt="Tent icon">Tabără</a>
         <a><img src="images/svg/raccoon.svg" class="nav-icon" alt="Targaryen Sigil">Creature</a>
@@ -123,7 +128,7 @@
         <a><img src="images/svg/mushroom.svg" class="nav-icon">Mâncare</a>
       </section>
       <section class="mountains-visited">
-        <h5>Listă de Munți</h5>
+        <h5 class="user-headings">Listă de Munți</h5>
         <form>
           <label for=""><input type="checkbox" id="">
           Munții Banatului</label>
