@@ -19,7 +19,6 @@ nav {
 header {
   position: relative;
   display: grid;
-  /*grid-template-rows: auto;*/
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: #7d7e75;
@@ -28,7 +27,6 @@ header {
   background-position: 0px -40px;
   text-shadow: 0 0 14px #fff;
   color: black;
-  /*background-color: #ceaf69;*/
 }
 
 main {
@@ -37,7 +35,7 @@ main {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding: 25px 40px;
+  padding: 25px 40px 25px 56px;
   background-color: #edf2f4;
 }
 
@@ -72,11 +70,23 @@ td {
   padding: 20px;
 }
 
+label {
+  display: block;
+}
+
 nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: 18px;
 }
+
+nav a:hover {
+  color: #efacb4;
+}
+
+/*Header area*/
+  /*search bar inside header*/
 
 .search-area {
   display: flex;
@@ -86,34 +96,29 @@ nav a {
 }
 
 .nav-toggle-container {
-  display: inline-block;
+  display: inline-flex;
   border-right: solid 1.5px #264653;
-  height: 40px;
-  width: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  width: 78px;
+}
+
+.nav-toggle-container:hover {
+  background-color: #ef818e;
 }
 
 .toggle-nav-arrow {
-  background-color: transparent;
   border-style: none;
   height: 10px;
-  background-image: url(images/arrow-left.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.toggle-nav-menu-btn {
-  background-color: transparent;
-  border-style: none;
-  height: 10px;
-  background-image: url(images/menu-icon.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .nav-search {
+  padding: 0 12px;
   border-style: none;
   border-right: 1.5px solid #264653;
-  /*height: 60px;*/
+  font-size: 1.1em;
+  height: 63px;
   width: 100%;
   background-color: transparent;
 }
@@ -122,48 +127,101 @@ nav a {
   color: #517583;
 }
 
+.search-icon {
+padding: 0 15px;
+height: 63px;
+width: 32px;
+}
+
+.search-icon:hover {
+  background-color: #ef818e;
+}
+
+#nav-hamburger {
+  padding: 0px 15px 0px 0px;
+}
+
+.cabin-icon,
+.planet-icon {
+  border-right: 1.5px solid #264653;
+}
+
+.small-search-icon {
+  padding: 0px;
+  width: 10px;
+  height: 10px;
+}
+
 .home-nav-icon {
-  background-color: transparent;
   border-style: none;
   border-right: solid 1.5px #264653;
-  background-image: url(images/svg/006-home.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 35px;
   width: 58px;
 }
 
 .map-nav-icon {
-  background-color: transparent;
   border-style: none;
   border-right: solid 1.5px #264653;
-  background-image: url(images/svg/map.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 39px;
   width: 48px;
 }
 
 .grid-nav-icon {
-  background-color: transparent;
   border-style: none;
   border-right: solid 1.5px #264653;
-  background-image: url(images/svg/grid.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 39px;
   width: 48px;
 }
 
+  /*page title within header*/
+
 .page-title {
+  position: relative;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
+.page-title h1 {
+  margin: 31px 0px 5px 54px;
+}
+
+.page-title p {
+  margin: 0px 0px 5px 54px;
+}
+
 .site-link {
-  color: #ef818e;
+  margin: 0px 0px 0px 7px;
   text-decoration: underline;
   font-weight: 600;
+  color: #ef818e;
+}
+
+.edit-page-btn-wrap {
+  position: absolute;
+  right: 33px;
+  top: 31px;
+}
+
+.edit-page-btn {
+  border-radius: 100%;
+  border: solid 2px #264653;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+}
+
+#long-edit-btn {
+  justify-content: center;
+  border-radius: 40%;
+  width: 100px;
+}
+
+.active-light {
+  display: inline-block;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  background-color: green;
 }
 
 /*Statistics area*/
@@ -172,6 +230,10 @@ nav a {
   border-bottom: .5px solid;
   margin-bottom: 0;
   font-family: "Isotok-Web", sans-serif;
+}
+
+.stat-tabs li:hover {
+  border-bottom: solid 4px #ef818e;
 }
 
 .active-tab {
@@ -188,8 +250,8 @@ nav a {
 
 .circle-graph {
   display: inline-flex;
-  height: 130px;
-  width: 130px;
+  height: 9vw;
+  width: 27%;
   border-radius: 100%;
   border: 12px solid;
   flex-direction: column;
@@ -288,13 +350,14 @@ nav a {
   border-bottom: .5px solid;
 }
 
-.user-enemies {
+.mountains-visited {
   padding: 30px 0 30px 14px;
   border-bottom: .5px solid;
 }
 
 .nav-icon {
-  height: 25px;
+  height: 18px;
+  margin: 0 6px 0 0;
 }
 
 
