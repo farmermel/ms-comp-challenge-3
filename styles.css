@@ -260,6 +260,10 @@ background-color: #b9bdc5;
 
 /*Statistics area*/
 
+ul .search-icon {
+  display: none;
+}
+
 .stat-tabs {
   border-bottom: .5px solid;
   margin-bottom: 0;
@@ -357,6 +361,7 @@ background-color: #b9bdc5;
   background-color: #edf2f4;
 }
 
+
 #up-arrow-container {
   display: flex;
   position: absolute;
@@ -367,6 +372,10 @@ background-color: #b9bdc5;
   border-radius: 100%;
   border: 3px solid #264653;
   background-color: #ccd4dd;
+}
+
+.up-arrow-container:hover {
+  background-color: #e2959e;
 }
 
 .up-arrow-img {
@@ -484,6 +493,10 @@ background-color: #b9bdc5;
   height: 33px;
 }
 
+#link-wo-btn {
+  padding: 6px 2px 0px;
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -566,7 +579,7 @@ background-color: #b9bdc5;
   }
 
   .current-stats {
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     margin: 0px 0px 85px;
     width: 100%;
   }
@@ -697,18 +710,63 @@ background-color: #b9bdc5;
   li {
     margin: 10px 10px 0px 10px;
   }
+
+  .circle-graph {
+    height: 150px;
+    width: 150px;
+  }
+
+  .description-section {
+    margin: auto;
+    /*width: 90%;*/
+  }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 740px) {
   .edit-page-btn-wrap {
-    right: 155px;
-    top: 81px;
+    left: 114px;
+    top: 121px;
   }
 
-  .edit-page-btn {
+  ul .search-icon {
+    display: initial;
+    border-radius: 25px;
+    border: solid 2px #264653;
+    height: 50px;
+  }
+
+  .stat-tabs li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .circle-graph {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  header {
+    background-position: 0px 0px;
+  }
+
+  .edit-page-btn-wrap {
+    /*right: 155px;
+    top: 81px;*/
+    display: none;
+  }
+
+  .cabin-icon,
+  .planet-icon {
+    display: none;
+  }
+
+/*  .edit-page-btn {
     height: 30px;
     width: 30px;
-  }
+  }*/
 }
 
 
