@@ -71,18 +71,27 @@ li {
 }
 
 table {
-  table-layout: fixed;
+  /*table-layout: fixed;*/
   border-collapse: collapse;
+  font-family: "Istok-Web", sans-serif;
   width: 93%;
 }
 
+th {
+  /*width: 15px;*/
+  padding: 23px 23px 0px;
+  text-align: left;
+  vertical-align: text-top;
+}
+
 tr {
-  border-bottom: .5px solid;
+  /*border-bottom: .5px solid;*/
   background: #ccd4dd;
 }
 
 td {
-  padding: 20px;
+  vertical-align: text-top;
+  padding: 20px 70px;
 }
 
 label {
@@ -289,6 +298,7 @@ ul .search-icon {
   justify-content: center;
   text-align: center;
   border-radius: 100%;
+  /*transform: rotate(45deg);*/
   border: 12px solid;
   height: 137px;
   width: 137px;
@@ -296,6 +306,11 @@ ul .search-icon {
 
 .circle-graph p {
   margin: 0px;
+  /*transform: rotate(-45deg);*/
+}
+
+.big-number {
+  font-size: 1.4em;
 }
 
 .circle-graph-one {
@@ -392,6 +407,7 @@ ul .search-icon {
 
 .edit-description {
   background-color: #486f7f;
+  color: #fff;
 }
 
 /*Social media*/
@@ -632,6 +648,55 @@ ul .search-icon {
   height: 18.5px;
 }
 
+@media screen and (min-width: 1560px) {
+  nav {
+    font-size: 1.3em;
+  }
+
+  nav a {
+    font-size: 1.3em;
+  }
+
+  .page-title h1 {
+    font-size: 4em;
+  }
+
+  .page-title p,
+  .page-title ul {
+    font-size: 1.3em;
+  }
+
+  .search-icon {
+    width: 50px;
+  }
+
+  .small-icon {
+    width: 10px;
+  }
+
+  .nav-icon {
+    text-indent: 34px;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .user-main {
+    padding: 25px 0px 52px 14px;
+  }
+
+  .logistics {
+    padding: 30px 0px 40px 14px;
+  }
+
+  .circle-graph {
+    margin: 0px 3px;
+    height: 167px;
+    width: 167px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .stats {
     flex-direction: column;
@@ -795,15 +860,64 @@ ul .search-icon {
 }
 
 @media screen and (max-width: 640px) {
+  main {
+    padding: 0px 25px 25px 25px;
+  }
+
+  .current-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .circle-graph {
+    margin: 0px 10px;
     height: 120px;
     width: 120px;
+  }
+
+  .bar-graph {
+    width: auto;
+  }
+
+  .media-button {
+    justify-content: center;
+  }
+
+  .media-button p {
+    display: none;
+  }
+
+  .links-away {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .links-away p {
+    white-space: normal;
   }
 }
 
 @media screen and (max-width: 435px) {
+/*    body {
+    width: 124%;
+  }*/
+
+  main {
+    padding: 0px 15px 25px 6px;
+  }
+
   header {
     background-position: 0px 0px;
+  }
+
+  th {
+    padding: auto;
+  }
+
+  td {
+    padding: 0px;
   }
 
   .edit-page-btn-wrap {
