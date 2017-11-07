@@ -71,21 +71,19 @@ li {
 }
 
 table {
-  /*table-layout: fixed;*/
   border-collapse: collapse;
   font-family: "Istok-Web", sans-serif;
   width: 93%;
 }
 
 th {
-  /*width: 15px;*/
   padding: 23px 23px 0px;
   text-align: left;
   vertical-align: text-top;
+  font-family: "Manuale", serif;
 }
 
 tr {
-  /*border-bottom: .5px solid;*/
   background: #ccd4dd;
 }
 
@@ -271,8 +269,12 @@ ul .search-icon {
   border-bottom: solid 4px #ef818e;
 }
 
-.active-tab {
+#active-tab {
   border-bottom: solid 4px #ef818e;
+}
+
+.expand-tabs {
+  display: none;
 }
 
 .stats {
@@ -703,7 +705,6 @@ ul .search-icon {
   }
 
   .current-stats {
-    /*justify-content: space-around;*/
     margin: 0px 0px 85px;
     width: 100%;
   }
@@ -727,7 +728,6 @@ ul .search-icon {
   }
 }
 
-/*used to be at 770px*/
 @media screen and (max-width: 1035px) {
   body {
     display: grid;
@@ -764,8 +764,6 @@ ul .search-icon {
   .media-button {
     height: 56px;
     width: 31%;
-    /*font-size: 0px;*/
-
   }
 
   .media-img {
@@ -830,24 +828,26 @@ ul .search-icon {
 
 @media screen and (max-width: 740px) {
   .edit-page-btn-wrap {
-    left: 114px;
-    top: 121px;
+    left: 47px;
+    top: 116px;
   }
 
   .edit-page-btn {
     opacity: 0.7;
   }
 
-  ul .search-icon {
-    display: initial;
-    border-radius: 25px;
-    border: solid 2px #264653;
-    height: 50px;
-    opacity: 0.7;
+  .expand-tabs {
+    display: inline-block;
+    color: #ef818e;
   }
 
   .stat-tabs li {
     display: none;
+  }
+
+  #active-tab {
+    display: inline-block;
+    margin: 70px 13px 0px;
   }
 
   .circles-label {
@@ -862,6 +862,27 @@ ul .search-icon {
 @media screen and (max-width: 640px) {
   main {
     padding: 0px 25px 25px 25px;
+  }
+
+  header {
+    background-position: 0px -10px
+  }
+
+  .page-title h1 {
+    margin: 53px 0px 5px 34px;
+  }
+
+  .page-title p {
+    margin: 0px 0px 5px 34px;
+  }
+
+  .edit-page-btn-wrap {
+    left: 30px;
+    top: 135px;
+  }
+
+  #active-tab {
+    margin: 70px 0px 0px;
   }
 
   .current-stats {
@@ -900,9 +921,6 @@ ul .search-icon {
 }
 
 @media screen and (max-width: 435px) {
-/*    body {
-    width: 124%;
-  }*/
 
   main {
     padding: 0px 15px 25px 6px;
@@ -920,10 +938,12 @@ ul .search-icon {
     padding: 0px;
   }
 
+  #active-tab {
+    margin: 22px 13px 0px 0px;
+  }
+
   .edit-page-btn-wrap {
     display: none;
-    /*right: 155px;
-    top: 81px;*/
   }
 
   .cabin-icon,
@@ -931,9 +951,8 @@ ul .search-icon {
     display: none;
   }
 
-/*  .edit-page-btn {
-    height: 30px;
-    width: 30px;
-  }*/
+  .links-away {
+    margin: 0px 0px 41px;
+  }
 }
 
