@@ -13,21 +13,21 @@
       <section class="search-area">
         <div class="nav-toggle-container">
           <img src="images/svg/left-arrow.svg" class="search-icon small-icon">
-          <img src="images/svg/bars.svg" id="nav-hamburger" class="search-icon" alt="hamburger menu">
+          <img src="images/svg/bars.svg" id="nav-hamburger" class="search-icon" alt="toggle nav button">
         </div>
         <input class="nav-search" placeholder="Căutare în Site">
-        <img src="images/svg/cabin.svg" class="search-icon cabin-icon" alt="Log cabin icon">
-        <img src="images/svg/map.svg" class="search-icon planet-icon" alt="Location on the planet icon">
-        <img src="images/svg/grid.svg" class="search-icon grid-icon" alt="Grid menu icon">
+        <img src="images/svg/cabin.svg" class="search-icon cabin-icon" alt="Home button">
+        <img src="images/svg/map.svg" class="search-icon planet-icon" alt="Current Location button">
+        <img src="images/svg/grid.svg" class="search-icon grid-icon" alt="Grid menu button">
       </section>
       <section class="page-title">
         <h1>Munții Carpați</h1>
         <p><img src="images/svg/current-loc.svg" class="small-icon">Carpații românești &middot;<a class="site-link" href=#>Vizită Aceasta Site</a></p>
         <form class="edit-page-btn-wrap">
           <button id="long-edit-btn" class="edit-page-btn"><div><div class="active-light"></div>Deschis</div></button>
-          <button class="edit-page-btn"><img src="images/svg/tag.svg" class="edit-icon" alt="Tag icon"></button>
-          <button class="edit-page-btn"><img src="images/svg/edit.svg" class="edit-icon" alt="Edit icon"></button>
-          <button class="edit-page-btn"><img src="images/svg/like.svg" class="edit-icon" alt="Heart icon"></button>
+          <button class="edit-page-btn"><img src="images/svg/tag.svg" class="edit-icon" alt="Tag this page"></button>
+          <button class="edit-page-btn"><img src="images/svg/edit.svg" class="edit-icon" alt="Edit this page icon"></button>
+          <button class="edit-page-btn"><img src="images/svg/like.svg" class="edit-icon" alt="Like this page icon"></button>
         </form>
         <ul class="stat-tabs">
           <li id="active-tab">Sumar <span class="expand-tabs"> &#187; </span></li>
@@ -53,7 +53,7 @@
           <p class="bar-graph-label">Grafic Bară</p>
         </article>
         <div class="create-space">
-          <div id="up-arrow-container"><img src="images/svg/up-arrow.svg" class="up-arrow-img" alt="up arrow"></div>
+          <div id="up-arrow-container"><img src="images/svg/up-arrow.svg" class="up-arrow-img" alt="collapse statistics section"></div>
         </div>
       </section>
       <section class="description-section">
@@ -61,7 +61,7 @@
             <table>
               <tr class="table-description">
                 <th>Descriere Parcul</th>
-                <th><button class="edit-description"><img src="images/svg/edit-white.svg" class=" edit-table" alt="edit icon">A Rezivui</button></th>
+                <th><button class="edit-description"><img src="images/svg/edit-white.svg" class=" edit-table" alt="edit description table">A Rezivui</button></th>
               </tr>
               <tr>
                 <th>Nume de Parc</th>
@@ -101,7 +101,7 @@
             </form>
             <section>
               <section>
-                <h3><img src="images/svg/link-symbol.svg" class="link-icon" alt="Chain-link icon">Link</h3>
+                <h3><img src="images/svg/link-symbol.svg" class="link-icon" aria-hidden="true">Link</h3>
                 <p>Element de navigație într-un document electronic către alte părți ale aceluiași document.</p>
                 <article class="links-away">
                   <p>https://farmermel.github.io/ms-comp-challenge-3/</p>
@@ -109,7 +109,7 @@
                 </article>
               </section>
               <section>
-                <h3><img src="images/svg/cloud.svg" class="link-icon" alt="Cloud upload icon">A Descărcarea Date</h3>
+                <h3><img src="images/svg/cloud.svg" class="link-icon" aria-hidden="true">A Descărcarea Date</h3>
                 <p>A descărca înseamnă a primi date și fișiere de la un sistem depărtat pe sistemul local.</p>
                 <article class="links-away">
                   <p>https://farmermel.github.io/ms-comp-challenge-3/</p>
@@ -117,7 +117,7 @@
                 </article>
               </section>
               <section>
-                <h3><img src="images/svg/send.svg" class="link-icon" alt="Paper plane icon">A Trimite la Prieten</h3>
+                <h3><img src="images/svg/send.svg" class="link-icon" aria-hidden="true">A Trimite la Prieten</h3>
                 <p>Prietenia este o relație afectivă și de cooperare între ființe umane, care se caracterizează prin sentiment de simpatie.</p>
                 <article class="links-away">
                   <p id="link-wo-btn">https://farmermel.github.io/ms-comp-challenge-3/</p>
@@ -130,7 +130,7 @@
     <nav>
       <section class="user">
         <img src="images/bear.jpg" id="user-photo" alt="Drawing of a bear drinking tea">
-        <p>Vizitator <img src="images/svg/arrow-down.svg" class="small-icon" alt="Down arrow icon"></p>
+        <p>Vizitator <img src="images/svg/arrow-down.svg" class="small-icon" alt="Drop down user menu"></p>
       </section>
       <section class="user-main">
         <h5 class="user-headings">Cuprins</h5>
@@ -151,13 +151,13 @@
       <section class="mountains-visited">
         <h5 class="user-headings">Listă de Munți</h5>
         <form>
-          <label for=""><input type="checkbox" id="">
+          <label for="banatului"><input type="checkbox" id="banatului">
           Munții Banatului</label>
-          <label for=""><input type="checkbox" id="">
+          <label for="poiana"><input type="checkbox" id="poiana">
           Munții Poiana</label>
-          <label for=""><input type="checkbox" id="">
+          <label for="apuseni"><input type="checkbox" id="apuseni">
           Munții Apuseni</label>
-          <label for=""><input type="checkbox" id="">
+          <label for="mare"><input type="checkbox" id="mare">
           Pǎpușa Mare</label>
         </form>
       </section>

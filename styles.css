@@ -705,7 +705,7 @@ ul .search-icon {
   }
 
   .circles-label {
-    left: 42%;
+    left: 45%;
     bottom: 291px;
   }
 
@@ -725,6 +725,10 @@ ul .search-icon {
     grid-template-rows: 18% 82%;
   } 
 
+  table {
+    width: 100%;
+  }
+
   .media-form {
     display: flex;
     justify-content: space-around;
@@ -737,10 +741,6 @@ ul .search-icon {
 
   .create-space {
     right: 47%;
-  }
-
-  table {
-    width: 100%;
   }
 
   .edit-table {
