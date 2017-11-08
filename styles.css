@@ -396,6 +396,11 @@ ul .search-icon {
   width: 70%;
 }
 
+.edit-table {
+  height: 12px;
+  margin: 0px 3px 0px 0px;
+}
+
 .table-description {
   height: 63px;
   background-color: #6690a0;
@@ -757,6 +762,11 @@ ul .search-icon {
     width: 100%;
   }
 
+  .edit-table {
+    height: 12px;
+    margin: 0px 3px 0px 0px;
+  }
+
   .social-media {
     width: 100%;
   }
@@ -901,6 +911,14 @@ ul .search-icon {
     width: auto;
   }
 
+  .bar-graph-label {
+    right: 43.5%;
+  }
+
+  tr {
+    padding: 20px 50px 30px 10px;
+  }
+
   .media-button {
     justify-content: center;
   }
@@ -935,7 +953,7 @@ ul .search-icon {
   }
 
   td {
-    padding: 0px;
+    padding: 0px 6px 12px 0px;
   }
 
   #active-tab {
@@ -949,6 +967,14 @@ ul .search-icon {
   .cabin-icon,
   .planet-icon {
     display: none;
+  }
+
+  .bar-graph-label {
+    right: 37.5%;
+  }
+
+  .create-space {
+    right: 42%;
   }
 
   .links-away {
