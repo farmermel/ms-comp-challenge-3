@@ -7,7 +7,6 @@ body {
 }
 
 header {
-  position: relative;
   display: grid;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -98,7 +97,6 @@ label {
 
 nav a {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   font-size: 18px;
 }
@@ -114,8 +112,6 @@ nav a:hover {
 
 .search-area {
   display: flex;
-  grid-row-start: 1;
-  grid-row-end: 2;
   border-bottom: solid 1.5px #264653;
 }
 
@@ -124,7 +120,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   border-right: solid 1.5px #264653;
-  height: 63px;
   width: 78px;
 }
 
@@ -139,7 +134,6 @@ nav a:hover {
 
 .nav-search {
   padding: 0 12px;
-  border-right: 1.5px solid #264653;
   border-style: none;
   text-indent: 30px;
   font-size: 1.1em;
@@ -148,7 +142,6 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: 1.1em;
   background-position: 14px 22px;
-  height: 63px;
   width: 100%;
   color: #0d2128 ;
 }
@@ -173,12 +166,12 @@ nav a:hover {
   background-color: transparent;
 }
 
-.cabin-icon {
+.cabin-icon,
+.grid-icon {
   border-left: solid 1.5px #264653;
 }
 
-.cabin-icon,
-.planet-icon {
+.cabin-icon {
   border-right: 1.5px solid #264653;
 }
 
@@ -193,8 +186,6 @@ nav a:hover {
 
 .page-title {
   position: relative;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .page-title h1 {
@@ -391,18 +382,12 @@ ul .search-icon {
   display: flex;
 }
 
-.page-description {
-  flex-direction: flex-start;
-  width: 70%;
-}
-
 .edit-table {
   height: 12px;
   margin: 0px 3px 0px 0px;
 }
 
 .table-description {
-  height: 63px;
   background-color: #6690a0;
 }
 
@@ -750,10 +735,6 @@ ul .search-icon {
     flex-direction: column;
   }
 
-  .page-description {
-    width: 100%;
-  }
-
   .create-space {
     right: 47%;
   }
@@ -981,4 +962,3 @@ ul .search-icon {
     margin: 0px 0px 41px;
   }
 }
-
