@@ -80,6 +80,7 @@ th {
   text-align: left;
   vertical-align: text-top;
   font-family: "Manuale", serif;
+  color: #264653;
 }
 
 tr {
@@ -89,6 +90,7 @@ tr {
 td {
   vertical-align: text-top;
   padding: 20px 70px;
+  color: #264653;
 }
 
 label {
@@ -389,6 +391,10 @@ ul .search-icon {
 
 .table-description {
   background-color: #6690a0;
+}
+
+.table-description th {
+  color: #172a32;
 }
 
 .pseudo-gallery {
